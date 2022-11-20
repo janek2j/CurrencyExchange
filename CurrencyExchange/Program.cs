@@ -6,6 +6,7 @@
         {
             List<string> list = new List<string> {"EUR", "USD", "CHF" };
             list.Add("PLN");
+            list.Add("EUR");
             list.Add("JPY");
 
             list.Sort();

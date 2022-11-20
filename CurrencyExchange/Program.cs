@@ -4,6 +4,14 @@
     {
         static void Main(string[] args)
         {
+            List<string> list = new List<string> { "PLN", "EUR", "USD", "CHF" };
+            list.Add("JPY");
+            list.Sort();
+
+            foreach (string item in list)
+            {
+                Console.WriteLine(item);
+            }
             Console.WriteLine("Start");
         }
     }
@@ -26,7 +34,7 @@
 
     internal class ExchangeTransaction
     {
-        public string TransactionId { get; set; }   
+        public string TransactionId { get; set; }
         public string TransactionType { get; set; }
 
         public string CurrencyFrom { get; set; }
@@ -38,11 +46,9 @@
         public decimal TransactionFee { get; set; }
         public decimal AmountFrom { get; set; }
 
-        public decimal AmountTo {get; set; }
-
+        public decimal AmountTo { get; set; }
 
     }
-
 
 }
 

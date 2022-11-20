@@ -4,9 +4,10 @@
     {
         static void Main(string[] args)
         {
-            List<string> list = new List<string> {"EUR", "USD", "CHF" };
+            List<string> list = new List<string> {"CHF" };
             list.Add("PLN");
             list.Add("EUR");
+            list.Add("USD");
             list.Add("JPY");
 
             list.Sort();

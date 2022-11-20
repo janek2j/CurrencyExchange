@@ -24,6 +24,25 @@
         }
     }
 
+    internal class ExchangeTransaction
+    {
+        public string TransactionId { get; set; }   
+        public string TransactionType { get; set; }
+
+        public string CurrencyFrom { get; set; }
+        public string CurrencyTo { get; set; }
+
+        public decimal ExchangeRate { get; set; }
+        public string? TransactionDescription { get; set; }
+
+        public decimal TransactionFee { get; set; }
+        public decimal AmountFrom { get; set; }
+
+        public decimal AmountTo {get; set; }
+
+
+    }
+
 
 }
 
